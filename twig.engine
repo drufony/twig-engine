@@ -19,8 +19,7 @@ function twig_init($template) {
  * Implements hook_theme().
  */
 function twig_theme($existing, $type, $theme, $path) {
-  $templates = drupal_find_theme_functions($existing, array($theme));
-  $templates += drupal_find_theme_templates($existing, '.html.twig', $path);
+  $templates = drupal_find_theme_templates($existing, twig_extension(), $path);
 
   $paths = array_map(function ($value) { return $value['path']; }, array_values($templates));
   $paths = array_unique($paths);
