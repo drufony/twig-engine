@@ -51,5 +51,5 @@ function twig_render_template($template_file, $variables) {
  * Implements hook_extension().
  */
 function twig_extension() {
-  return '.html.twig';
+  return '.twig';
 }
