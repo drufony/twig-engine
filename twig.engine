@@ -42,6 +42,7 @@ function twig_theme($existing, $type, $theme, $path) {
  */
 function twig_render_template($template_file, $variables) {
   $c = pimple_get_container();
+  /** @var \Twig_Environment $twig */
   $twig = $c['twig'];
   return $twig->render(basename($template_file), $variables);
 }
