@@ -4,8 +4,8 @@
   "type": "drupal-theme",
   "license": "GPL-2.0+",
   "require": {
-    "twig/twig": "~1.16",
-    "twig/extensions": "~1.2"
+    "twig/twig": "^1.16|^2.0",
+    "twig/extensions": "^1.2"
   },
   "authors": [
     {
